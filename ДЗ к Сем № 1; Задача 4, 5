@@ -3,7 +3,7 @@
 
 num = int(input('Введите номер четверти: '))
 if num == 1: print(f'\n0 < X < +∞\n0 < Y < +∞')
-elif num == 2:  print(f'\n-∞ < X < 0\n0 < Y < +∞')
+elif num == 2: print(f'\n-∞ < X < 0\n0 < Y < +∞')
 elif num == 3: print(f'\n-∞ < X < 0\n-∞ < Y < 0') 
 elif num == 4: print(f'\n0 < X < +∞\n-∞ < Y < 0')
 else: print(f'\nНомер четверти-число от 1 до 4. \nВы ввели {num}!')
