@@ -12,9 +12,9 @@ def show_desk(spp:list):
         ks = "|"
         c_el = Fore.CYAN
         if i%3 == 2: ks = '\n' + 11 * '-' + '\n'
-        if spp[i] == 'O': c_el = Fore.YELLOW
-        if spp[i] == 'X': c_el = Fore.RED
-        print(c_el + f' {spp[i]} ' + Fore.CYAN , end = ks)
+        if spp[i] == 'O': c_el = Style.BRIGHT + Fore.YELLOW
+        if spp[i] == 'X': c_el = Style.BRIGHT + Fore.RED
+        print(c_el + f' {spp[i]} ' + Style.RESET_ALL + Fore.CYAN , end = ks)
     print(Style.RESET_ALL)
 
 # Метод "bot_O" получает список текущей доски, выбирает случайную позицию
