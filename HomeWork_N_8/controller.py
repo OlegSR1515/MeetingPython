@@ -15,14 +15,12 @@ def run_calc():
 # Выбираем просмотр журнала
     if expr == '':
         rez = f'Проверка журнала:\n{hlog()}'
-        shr(rez)
 # Выбираем уравнение для решения. Выводим корни через ";".
     elif '=0' in expr:
         rez = ee(expr, 1).replace(',', ';') 
-        shr(rez)
         elog(expr_0, rez)
 # Выбираем выражение для упрощения.
     else:
         rez = ee(expr, 0)
-        shr(rez)
         elog(expr_0, rez)
+    shr(rez)
